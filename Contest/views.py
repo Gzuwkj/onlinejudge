@@ -19,17 +19,11 @@ def register_status(contests, username):
             time1 = con.startTime.replace(tzinfo=None)     # 比赛开始时间
             time2 = datetime.datetime.now()       # 当前系统时间
             time3 = time1+datetime.timedelta(minutes=int(con.howLong))     # 比赛结束时间
-            print(time1)
-            print(time2)
-            print(time3)
             if time1 > time2:
-                print('bisaiweikaishi')
                 status_list.append(1)
             elif time2 < time3:
-                print('bisaijinxingzhong')
                 status_list.append(2)
             elif time2 > time3:
-                print('bisaijieshu')
                 status_list.append(3)
     print(status_list)
     return status_list

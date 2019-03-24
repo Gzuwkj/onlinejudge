@@ -4,55 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/Contest/templates/page.html" line="0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="105d8eda-d3f9-4819-83ec-f2d5fb54c518" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/Contest/templates/page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/user_register_first.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/user_register_second.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/image/p1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/image/product2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/image/user.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/code-editing/clike.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/code-editing/codemirror.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/code-editing/python.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChMkJlbKyJiIGN_TABf7QT-1muoAALIEQKcF0QAF_tZ080.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contest/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Contest/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contest/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Contest/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contest/templates/contest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Contest/templates/contest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contest/templates/contestList.html" beforeDir="false" afterPath="$PROJECT_DIR$/Contest/templates/contestList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contest/templates/rank.html" beforeDir="false" afterPath="$PROJECT_DIR$/Contest/templates/rank.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contest/templates/status.html" beforeDir="false" afterPath="$PROJECT_DIR$/Contest/templates/status.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contest/templatetags/my_filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Contest/templatetags/my_filter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contest/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Contest/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Issue/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/UserProfile/scripts/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Issue/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Issue/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Issue/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Issue/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Issue/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/UserProfile/scripts/register.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Issue/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Issue/templates/problemPage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Issue/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Issue/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Issue/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OnlineJudge/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineJudge/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserProfile/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/UserProfile/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserProfile/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/UserProfile/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserProfile/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/UserProfile/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserProfile/templates/userinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/UserProfile/templates/userinfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserProfile/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/UserProfile/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserProfile/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/UserProfile/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aaa.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/1000/data/1000_AnonymousUser.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/1000/data/1000_孔垂丰.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/1003/datafiles/1.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/1003/datafiles/1.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/1003/datafiles/sampleInput.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/1003/datafiles/sampleOutPut.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/headImage/ChMkJlbKyJiIGN_TABf7QT-1muoAALIEQKcF0QAF_tZ080.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/headImage/aaa_lGOgMdi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/login.css" afterDir="false" />
-    </list>
+    <list default="true" id="105d8eda-d3f9-4819-83ec-f2d5fb54c518" name="默认的" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,10 +14,35 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UserProfile/views.py">
+        <entry file="file://$PROJECT_DIR$/Contest/templates/contest.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="52" />
+            <state relative-caret-position="250">
+              <caret line="19" column="69" selection-start-line="19" selection-start-column="69" selection-end-line="19" selection-end-column="69" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#!!top" />
+                <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#!!top" />
+                <element signature="n#div#3;n#div#0;n#div#0;n#!!top" />
+                <element signature="n#div#4;n#div#0;n#div#0;n#!!top" />
+                <element signature="e#3460#3467#1" expanded="true" />
+                <element signature="e#3879#3886#1" expanded="true" />
+                <element signature="n#div#5;n#div#0;n#div#0;n#!!top" />
+                <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#5;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#5;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#5;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#5;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#5;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#7;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#5;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#8;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#5;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#9;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#5;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#10;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#5;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#11;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#5;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#7805#7812#1" expanded="true" />
+                <element signature="e#8224#8231#1" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,17 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="67" column="90" selection-start-line="67" selection-start-column="90" selection-end-line="67" selection-end-column="90" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/UserProfile/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="99" column="41" lean-forward="true" selection-start-line="99" selection-start-column="41" selection-end-line="99" selection-end-column="41" />
+            <state relative-caret-position="455">
+              <caret line="87" column="131" selection-start-line="87" selection-start-column="126" selection-end-line="87" selection-end-column="131" />
             </state>
           </provider>
         </entry>
@@ -91,17 +59,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Issue/templates/problem.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="114" column="60" selection-start-line="114" selection-start-column="60" selection-end-line="114" selection-end-column="60" />
+            <state relative-caret-position="-2025">
+              <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Contest/models.py">
+        <entry file="file://$PROJECT_DIR$/Contest/templates/contestList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="1225">
+              <caret line="61" column="60" lean-forward="true" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="60" />
+              <folding>
+                <element signature="e#3054#3061#1" expanded="true" />
+                <element signature="e#3437#3444#1" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -109,8 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Contest/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="74" selection-start-line="6" selection-start-column="74" selection-end-line="6" selection-end-column="74" />
+            <state relative-caret-position="175">
+              <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -118,44 +93,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Contest/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="218" column="3" lean-forward="true" selection-start-line="218" selection-start-column="3" selection-end-line="218" selection-end-column="3" />
+            <state relative-caret-position="-322">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
+                <element signature="e#380#1294#0" />
+                <element signature="e#1336#1994#0" />
+                <element signature="e#2036#2422#0" />
+                <element signature="e#2468#2727#0" />
+                <element signature="e#2782#3553#0" />
+                <element signature="e#3632#4511#0" />
+                <element signature="e#4558#5357#0" />
+                <element signature="e#5462#8465#0" />
+                <element signature="e#8562#11305#0" />
+                <element signature="e#11345#11449#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Contest/templates/status.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="58" column="46" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="46" />
-              <folding>
-                <element signature="n#style#0;n#option#1;n#select#1;n#fieldset#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#option#2;n#select#1;n#fieldset#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#option#3;n#select#1;n#fieldset#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#option#4;n#select#1;n#fieldset#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#option#5;n#select#1;n#fieldset#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Issue/templates/problem1.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Issue/templates/problemList.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -176,7 +131,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -215,24 +170,24 @@
         <option value="$PROJECT_DIR$/static/css/ProblemContent.css" />
         <option value="$PROJECT_DIR$/UserProfile/templates/login.html" />
         <option value="$PROJECT_DIR$/UserProfile/templates/register.html" />
-        <option value="$PROJECT_DIR$/Issue/templates/problem.html" />
         <option value="$PROJECT_DIR$/OnlineJudge/settings.py" />
-        <option value="$PROJECT_DIR$/Contest/templates/contestList.html" />
         <option value="$PROJECT_DIR$/Issue/templates/problemList.html" />
         <option value="$PROJECT_DIR$/../../OnlineJudge/Contest/templates/rank.html" />
-        <option value="$PROJECT_DIR$/Contest/templates/contest.html" />
         <option value="$PROJECT_DIR$/../../OnlineJudge/UserProfile/views.py" />
         <option value="$PROJECT_DIR$/UserProfile/urls.py" />
         <option value="$PROJECT_DIR$/UserProfile/templates/userinfo.html" />
         <option value="$PROJECT_DIR$/UserProfile/views.py" />
-        <option value="$PROJECT_DIR$/Contest/views.py" />
+        <option value="$PROJECT_DIR$/Contest/templates/contest.html" />
+        <option value="$PROJECT_DIR$/Issue/templates/problem.html" />
+        <option value="$PROJECT_DIR$/Contest/templates/contestList.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/Contest/views.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="240" />
-    <option name="y" value="180" />
+    <option name="x" value="490" />
+    <option name="y" value="207" />
     <option name="width" value="1750" />
     <option name="height" value="670" />
   </component>
@@ -247,45 +202,34 @@
         <subPane>
           <expand>
             <path>
-              <item name="OnlineJudge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OnlineJudge" type="462c0819:PsiDirectoryNode" />
+              <item name="onlinejudge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlinejudge" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="OnlineJudge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OnlineJudge" type="462c0819:PsiDirectoryNode" />
+              <item name="onlinejudge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlinejudge" type="462c0819:PsiDirectoryNode" />
               <item name="Contest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="OnlineJudge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OnlineJudge" type="462c0819:PsiDirectoryNode" />
+              <item name="onlinejudge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlinejudge" type="462c0819:PsiDirectoryNode" />
               <item name="Contest" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="OnlineJudge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OnlineJudge" type="462c0819:PsiDirectoryNode" />
+              <item name="onlinejudge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlinejudge" type="462c0819:PsiDirectoryNode" />
               <item name="Issue" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="OnlineJudge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OnlineJudge" type="462c0819:PsiDirectoryNode" />
+              <item name="onlinejudge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlinejudge" type="462c0819:PsiDirectoryNode" />
               <item name="Issue" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="OnlineJudge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OnlineJudge" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OnlineJudge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OnlineJudge" type="462c0819:PsiDirectoryNode" />
-              <item name="UserProfile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OnlineJudge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OnlineJudge" type="462c0819:PsiDirectoryNode" />
-              <item name="UserProfile" type="462c0819:PsiDirectoryNode" />
+              <item name="onlinejudge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlinejudge" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -340,21 +284,21 @@
       <workItem from="1543844175122" duration="6000" />
       <workItem from="1553388797889" duration="11517000" />
       <workItem from="1553405131955" duration="374000" />
+      <workItem from="1553433504238" duration="8116000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13807000" />
+    <option name="totallyTimeSpent" value="21923000" />
   </component>
   <component name="TodoView" selected-index="3" />
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2386059" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2419571" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="检验" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -364,11 +308,12 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="bottom" id="找到" order="11" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="检验" order="14" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -539,13 +484,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Contest/templates/contestList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="56" column="75" selection-start-line="56" selection-start-column="73" selection-end-line="56" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Issue/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -557,35 +495,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
           <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Contest/templates/contest.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="89" column="108" selection-start-line="89" selection-start-column="104" selection-end-line="89" selection-end-column="108" />
-          <folding>
-            <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#nav#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" />
-            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#7;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#8;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#9;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#10;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#11;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#3;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -634,13 +543,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Contest/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/UserProfile/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -648,46 +550,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Issue/templates/problemList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Issue/templates/problem1.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Issue/templates/problem.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="114" column="60" selection-start-line="114" selection-start-column="60" selection-end-line="114" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Contest/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="74" selection-start-line="6" selection-start-column="74" selection-end-line="6" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Contest/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="218" column="3" lean-forward="true" selection-start-line="218" selection-start-column="3" selection-end-line="218" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Contest/templates/status.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
+        <state relative-caret-position="1450">
           <caret line="58" column="46" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="46" />
           <folding>
             <element signature="n#style#0;n#option#1;n#select#1;n#fieldset#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -699,17 +564,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="67" column="90" selection-start-line="67" selection-start-column="90" selection-end-line="67" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/UserProfile/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
-          <caret line="99" column="41" lean-forward="true" selection-start-line="99" selection-start-column="41" selection-end-line="99" selection-end-column="41" />
+          <caret line="99" column="41" selection-start-line="99" selection-start-column="41" selection-end-line="99" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contest/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Issue/templates/problem1.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Issue/templates/problemList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="46" column="34" lean-forward="true" selection-start-line="41" selection-start-column="28" selection-end-line="46" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contest/templates/contest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="19" column="69" selection-start-line="19" selection-start-column="69" selection-end-line="19" selection-end-column="69" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#div#4;n#div#0;n#div#0;n#!!top" />
+            <element signature="e#3460#3467#1" expanded="true" />
+            <element signature="e#3879#3886#1" expanded="true" />
+            <element signature="n#div#5;n#div#0;n#div#0;n#!!top" />
+            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#5;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#5;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#5;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#5;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#5;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#7;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#5;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#8;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#5;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#9;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#5;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#10;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#5;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#11;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#5;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#7805#7812#1" expanded="true" />
+            <element signature="e#8224#8231#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Issue/templates/problem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2025">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contest/templates/contestList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1225">
+          <caret line="61" column="60" lean-forward="true" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="60" />
+          <folding>
+            <element signature="e#3054#3061#1" expanded="true" />
+            <element signature="e#3437#3444#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="87" column="131" selection-start-line="87" selection-start-column="126" selection-end-line="87" selection-end-column="131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contest/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contest/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-322">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#380#1294#0" />
+            <element signature="e#1336#1994#0" />
+            <element signature="e#2036#2422#0" />
+            <element signature="e#2468#2727#0" />
+            <element signature="e#2782#3553#0" />
+            <element signature="e#3632#4511#0" />
+            <element signature="e#4558#5357#0" />
+            <element signature="e#5462#8465#0" />
+            <element signature="e#8562#11305#0" />
+            <element signature="e#11345#11449#0" />
+          </folding>
         </state>
       </provider>
     </entry>
