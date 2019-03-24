@@ -1,0 +1,259 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}
+    home
+{% endblock %}
+
+{% block css_js %}
+    <style>
+        .header-img{
+            height: 400px;
+            padding: 0.5em;
+        }
+        .header-text{
+            height: 400px;
+        }
+        @media(max-width: 1200px){
+             .header-img{
+                height: 400px;
+                padding: 0.5em;
+            }
+            .header-text{
+                height: 400px;
+            }
+        }
+        @media(max-width: 992px){
+             .header-img{
+                height: 396.8px;
+                padding: 0.5em;
+            }
+            .header-text{
+                height: 396.8px;
+            }
+        }
+        @media(max-width: 768px){
+             .header-img{
+                height: 307.2px;
+                padding: 0.5em;
+            }
+            .header-text{
+                height: 204.8px;
+            }
+        }
+        @media(max-width: 576px){
+             .header-img{
+                height: 230.4px;
+                padding: 0.5em;
+            }
+            .header-text{
+                height: 153.6px;
+            }
+        }
+        @media(max-width: 406px){
+             .header-img{
+                height: 162.4px;
+                padding: 0.5em;
+            }
+            .header-text{
+                height: 108px;
+            }
+        }
+        .card .card-img-top{
+            height: 125px;
+            transition: 0.2s;
+        }
+        .card .card-body{
+            height: 110px;
+            transition: 0.2s;
+        }
+        .card .card-footer{
+            display: block;
+            height: 49px;
+            transition: 0.2s;
+        }
+        .card:hover > .card-body{
+            height: 219px;
+            transition: 0.39s;
+            background: #2d3436;
+            color: #fff;
+        }
+        .card:hover > .card-img-top{
+            transition: 0.4s;
+            height: 60px;
+        }
+        .card:hover > .card-footer{
+            transition: 0.4s;
+            height: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        .card:hover > .card-footer > small{
+            display: none;
+        }
+        .box_shadow{box-shadow: 0px 1px 4px 1px #888;background:#fff;}
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class = "container p-3">
+        <div class = "row my-3 box_shadow justify-content-between px-md-2">
+            <img src="{% static "image/p1.jpg" %}" class="img-thumbnail col-lg-8 my-md-2 header-img" alt="">
+            <div class = "col-lg-4 my-2 bg-secondary header-text"><div class="" ></div></div>
+        </div>
+        <div class="row p-2"></div>
+        <div class = "row justify-content-between my-3">
+            <div class="col-md-7">
+                <div class="row">
+                    <div class="col-lg-4 mb-3">
+                         <div class="card box-shadow bg-dark">
+                             <img class="card-img-top" src="{% static "image/product2.jpg" %}" alt="Card image cap">
+                             <div class="card-body text-light" >
+                                 <h5 class="card-title">Card title</h5>
+                                 <p class="card-text pb-1">This is a wider card with </p>
+                             </div>
+                             <div class="card-footer">
+                                 <small class="text-muted">Last updated 3 mins ago</small>
+                             </div>
+                         </div>
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                         <div class="card bg-dark box-shadow">
+                             <img class="card-img-top" src="{% static "image/product2.jpg" %}" alt="Card image cap">
+                             <div class="card-body" >
+                                 <h5 class="card-title">Card title</h5>
+                                 <p class="card-text pb-1">This is a wider card with </p>
+                             </div>
+                             <div class="card-footer">
+                                 <small class="text-muted">Last updated 3 mins ago</small>
+                             </div>
+                         </div>
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                         <div class="card box-shadow bg-dark">
+                             <img class="card-img-top" src="{% static "image/product2.jpg" %}" alt="Card image cap">
+                             <div class="card-body" >
+                                 <h5 class="card-title">Card title</h5>
+                                 <p class="card-text pb-1">This is a wider card with </p>
+                             </div>
+                             <div class="card-footer">
+                                 <small class="text-muted">Last updated 3 mins ago</small>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 d-none d-lg-block mb-3">
+                         <div class="card box-shadow bg-dark">
+                             <img class="card-img-top" src="{% static "image/product2.jpg" %}" alt="Card image cap">
+                             <div class="card-body" >
+                                 <h5 class="card-title">Card title</h5>
+                                 <p class="card-text pb-1">This is a wider card with </p>
+                             </div>
+                             <div class="card-footer">
+                                 <small class="text-muted">Last updated 3 mins ago</small>
+                             </div>
+                         </div>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block mb-3">
+                         <div class="card bg-dark box-shadow">
+                             <img class="card-img-top" src="{% static "image/product2.jpg" %}" alt="Card image cap">
+                             <div class="card-body" >
+                                 <h5 class="card-title">Card title</h5>
+                                 <p class="card-text pb-1">This is a wider card with </p>
+                             </div>
+                             <div class="card-footer">
+                                 <small class="text-muted">Last updated 3 mins ago</small>
+                             </div>
+                         </div>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block mb-3">
+                         <div class="card box-shadow bg-dark">
+                             <img class="card-img-top" src="{% static "image/product2.jpg" %}" alt="Card image cap">
+                             <div class="card-body" >
+                                 <h5 class="card-title">Card title</h5>
+                                 <p class="card-text pb-1">This is a wider card with </p>
+                             </div>
+                             <div class="card-footer">
+                                 <small class="text-muted">Last updated 3 mins ago</small>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 mb-3">
+                <table class="table my-3 table-striped table-hover box_shadow">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">First</th>
+                      <th scope="col">Last</th>
+                      <th scope="col">Handle</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}

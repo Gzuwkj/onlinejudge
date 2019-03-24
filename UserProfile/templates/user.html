@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}
+    user
+{% endblock %}
+
+{% block css_js %}
+
+{% endblock %}
+
+{% block content %}
+    <div class = "container py-3">
+        <div class="row">
+            <aside class="col-md-4">
+                <div class="p-3 mb-3 bg-light rounded text-center">
+                    <div class="top-header ">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="fa fa-search"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-3 mb-3 bg-light rounded text-center">
+                    <div class="sidebar-about">
+                        <div class="about-img">
+                            <img src="{% static "image/user.jpg" %}" alt="" class="img-fluid rounded-circle" width="120px">
+                        </div>
+                        <h4 class="py-2">Hi! -That's Me</h4>
+                        <p class="mb-3">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+
+                        <a href="javascript:void(0);" class="list-inline" data-toggle="modal" data-target="#exampleModal"><i class="far fa-edit"></i></a>
+
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputUsername">User Name</label>
+                                                    <input type="text" class="form-control" id="inputEmail4" placeholder="User Name" name="user_name">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputEmail">Email</label>
+                                                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="user_email">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputPassword">Password</label>
+                                                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputAPassword">Again Password</label>
+                                                    <input type="password" class="form-control" id="inputAPassword" placeholder="Again Password">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputDescription">Description</label>
+                                                <textarea type="text" class="form-control" id="inputDescription" placeholder="Somethings to share!"></textarea>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputSchool">School</label>
+                                                    <input type="text" class="form-control" id="inputSchool">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputSex">Sex</label>
+                                                    <select id="inputSex" class="form-control">
+                                                        <option selected>男</option>
+                                                        <option>女</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <input type="file">
+                                                </div>
+                                                <img src="{% static "image/user.jpg" %}" alt="" height="120px">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Send message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <div class="col-md-8">
+                <div class="py-3">
+                    <div class="sidebar-block">
+                        <h4 class="sidebar-title">Categories</h4>
+                        <ul class="list-unstyled mb-0 row container justify-content-between">
+                            <li>School: 贵州大学</li>
+                            <li>Join time: 2019.3.22 16:25</li>
+                            <li>Last seen: just now</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white mt-3">
+                    <div class="row p-md-4 p-sm-3 justify-content-between">
+                        <div class="col-md-4 col-sm-4 my-1"><h5 class="text-center font-weight-bold">提交数</h5><h5 class="text-center font-weight-bold">162</h5></div>
+                        <div class="col-md-4 col-sm-4 my-1"><h5 class="text-center font-weight-bold">尝试数</h5><h5 class="text-center font-weight-bold">162</h5></div>
+                        <div class="col-md-4 col-sm-4 my-1"><h5 class="text-center font-weight-bold">通过数</h5><h5 class="text-center font-weight-bold">162</h5></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <canvas>
+
+                    </canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

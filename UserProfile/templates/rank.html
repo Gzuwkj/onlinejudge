@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}
+    rank
+{% endblock %}
+
+{% block css_js %}
+    <style>
+         .box_shadow{box-shadow: 0px 1px 4px 1px #888;background:#fff;}
+        .input-group{min-width: 240px;}
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class = "container">
+        <div class = "row my-3 bg-white p-3 box_shadow rounded">
+            <div class="input-group mb-2 col-3">
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="昵称">
+                <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fas fa-search"></i></div>
+                </div>
+            </div>
+            <table class = "table table-striped my-3">
+                <thead class="thead-light">
+                <tr><th scope="col">序号</th><th scope="col">昵称</th><th scope="col">学校</th><th scope="col">rating</th></tr>
+                </thead>
+                <tbody>
+                <tr><td scope="row">001</td><td><a>羊吃鱼子酱</a></td><td>贵州大学</td><td>1500</td></tr>
+                <tr><td scope="row">002</td><td><a>羊吃鱼子酱</a></td><td>贵州大学</td><td>1500</td></tr>
+                <tr><td scope="row">003</td><td><a>羊吃鱼子酱</a></td><td>贵州大学</td><td>1500</td></tr>
+                <tr><td scope="row">004</td><td><a>羊吃鱼子酱</a></td><td>贵州大学</td><td>1500</td></tr>
+                <tr><td scope="row">005</td><td><a>羊吃鱼子酱</a></td><td>贵州大学</td><td>1500</td></tr>
+                <tr><td scope="row">006</td><td><a>羊吃鱼子酱</a></td><td>贵州大学</td><td>1500</td></tr>
+                <tr><td scope="row">007</td><td><a>羊吃鱼子酱</a></td><td>贵州大学</td><td>1500</td></tr>
+                <tr><td scope="row">008</td><td><a>羊吃鱼子酱</a></td><td>贵州大学</td><td>1500</td></tr>
+                <tr><td scope="row">009</td><td><a>羊吃鱼子酱</a></td><td>贵州大学</td><td>1500</td></tr>
+                <tr><td scope="row">010</td><td><a>羊吃鱼子酱</a></td><td>贵州大学</td><td>1500</td></tr>
+                <tr><td scope="row">011</td><td><a>羊吃鱼子酱</a></td><td>贵州大学</td><td>1500</td></tr>
+                <tr><td scope="row">012</td><td><a>羊吃鱼子酱</a></td><td>贵州大学</td><td>1500</td></tr>
+                <tr><td scope="row">013</td><td><a>羊吃鱼子酱</a></td><td>贵州大学</td><td>1500</td></tr>
+                <tr><td scope="row">014</td><td><a>羊吃鱼子酱</a></td><td>贵州大学</td><td>1500</td></tr>
+                <tr><td scope="row">015</td><td><a>羊吃鱼子酱</a></td><td>贵州大学</td><td>1500</td></tr>
+                <tr><td scope="row">016</td><td><a>羊吃鱼子酱</a></td><td>贵州大学</td><td>1500</td></tr>
+                <tr><td scope="row">017</td><td><a>羊吃鱼子酱</a></td><td>贵州大学</td><td>1500</td></tr>
+                <tr><td scope="row">018</td><td><a>羊吃鱼子酱</a></td><td>贵州大学</td><td>1500</td></tr>
+                <tr><td scope="row">019</td><td><a>羊吃鱼子酱</a></td><td>贵州大学</td><td>1500</td></tr>
+                <tr><td scope="row">020</td><td><a>羊吃鱼子酱</a></td><td>贵州大学</td><td>1500</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center py-3">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+{% endblock %}

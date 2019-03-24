@@ -230,7 +230,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="240" />
     <option name="y" value="180" />
     <option name="width" value="1750" />
@@ -344,7 +344,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13634000" />
+    <option name="totallyTimeSpent" value="13807000" />
   </component>
   <component name="TodoView" selected-index="3" />
   <component name="ToolWindowManager">
