@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}
+{% endblock %}
+{% load staticfiles %}
+{% block css_js %}
+	<link rel="stylesheet" href="{% static 'css/base16-dark.css' %}">
+	<script src="{% static 'js/clike.js' %}"></script>
+	<script src="{% static 'js/codemirror.js' %}"></script>
+	<script src="{% static 'js/python.js' %}"></script>
+	<style>
+		article p{
+			font-family: "Adobe 仿宋 Std R";
+			font-size: 14px;
+			margin: auto;
+		}
+		article{
+			margin-left: 0.75em;
+		}
+		h5{
+			padding: 0.6em;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		}
+		h6{
+			margin-left: 0.8em;
+			color: #515151;
+		}
+		.bttom-border{
+			border-bottom: 1px solid rgba(200, 200, 100, 0.1);
+		}
+		.text-center{
+			vertical-align: middle !important;
+		}
+		.up-btn{
+			height:12px;width:100%;background:#3d444c;text-align:center;
+
+		}
+		.up-btn .fa-sort-up{color: #fff;font-size: 18px;background: #232c31;padding: 2px 8px 0 8px;line-height: 12px;vertical-align:top;display: inline-block;}
+ 		.up-btn .fa-sort-up:hover{color:#08c;cursor:pointer;}
+		.stu-box{
+			width: 100%;
+			transition: 0.4s;
+		}
+	</style>
+	<script>
+		var myTextarea = $(".Codearea")[0];
+		var editor = CodeMirror.fromTextArea(myTextarea, {
+			lineNumbers: true,
+			mode:"text/x-c++src",
+			indentUnit: 4,
+			theme:"base16-dark",
+			indentWithTabs: true,
+		});
+		editor.setSize("100%" , "100%");
+		$(".up-btn").click(function(){
+		});
+		var code_slects = $(".dropdown-menu>li>a");
+		$(".re_Input").click(function(){
+			editor.setValue("");
+		});
+		for(var i = 0;i < code_slects.length;i++){
+		$(code_slects[i]).click(function(){
+				editor.setOption("mode" , "text/x-" + $(this).attr('id'));
+				$(".dropdown-toggle .slect-title").text($(this).text());
+			});
+		}
+	</script>
+{% endblock %}
+
+{% block content %}
+<div class = "container">
+	<div class="row mt-5 mt-2">
+		{% for prob in problem %}
+		<div class = "col-lg-7 mb-2">
+			<div class="bg-white p-md-4 overflow-auto px-1">
+				<h5 class = "font-weight-bold">题目描述</h5>
+				<p class = "bg-light text-justify p-3 mt-3">
+					{{prob.content}}
+				</p>
+				<h5 class = "font-weight-bold">输入输出格式</h5>
+				<div class = "Problem-content">
+					<h6 class = "font-weight-bold">输入格式:</h6>
+					<article class="my-3">
+						<p>
+							{{prob.myInput}}
+						</p>
+					</article>
+				</div>
+				<div class = "Problem-content">
+					<h6 class = "font-weight-bold">输出格式:</h6>
+					<article class="my-3">
+						<p>
+							{{prob.myOutput}}
+						</p>
+					</article>
+				</div>
+				<h5 class = "font-weight-bold">输入输出样例</h5>
+				<div class = "row">
+					<div class = "col-md-6">
+						<h6 class = "font-weight-bold">输入样例#:</h6>
+						<div class="p-2 bg-light mx-2 rounded mb-1">
+							<pre class = "sample-content">{{prob.sampleInput}}</pre>
+						</div>
+					</div>
+					<div class = "col-md-6">
+						<h6 class = "font-weight-bold">输出样例#:</h6>
+						<div class="p-2 bg-light mx-2 rounded mb-1">
+							<pre class = "sample-content">{{prob.sampleOutput}}</pre>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "col-lg-5 p-3 bg-dark rounded">
+			<form method="post" action="{% url 'contest:status' prob.no %}">
+				<div class = "row mb-2 bttom-border pb-2">
+					<div class="dropdown col-lg-4 col-md-4 ">
+						<div class="dropdown"><a class="btn btn-secondary dropdown-toggle text-white bg-info" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Dropdown link</a>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+								<a class="dropdown-item" href="#" id = "csrc">Action</a>
+								<a class="dropdown-item" href="#" id="c++src">Another action</a>
+								<a class="dropdown-item" href="#" id="java">Something else here</a>
+								<a class="dropdown-item" href="#" id="python">Python</a>
+							</div>
+						</div>
+					</div>
+					<div class = "col-lg-3 col-md-4 col-sm-4 col-xs-4 text-info pt-1"><i class="fab fa-rev"></i> 重置</div>
+				</div>
+				<div class = "row">
+					<textarea class = "Codearea" name=""></textarea>
+				</div>
+				<div class = "row">
+					<div class = "up-btn"><i class="fas fa-sort-up"></i></div>
+					<div class = "stu-box"></div>
+					<button type = "submit" class = "mx-2 mt-3 btn btn-primary col-lg-4 col-md-6 col-sm-8">提交代码</button>
+				</div>
+			</form>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+{% endblock %}

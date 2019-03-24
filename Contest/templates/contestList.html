@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block title %}
+
+{% endblock %}
+{% load my_filter %}
+{% block css_js %}
+
+
+
+	<style>
+		.table-content{
+		  word-wrap:break-word;
+		  table-layout:fixed;
+
+		}
+		.form-group li{line-height:2em;height:2em;flex-grow:1;background:#d9edf7;list-style:none;padding:0 0 0 2em;border:0.1px solid #fff;}
+		.form-group li:hover{cursor:pointer;background:#82B7F1;}
+		.form-group .active{background:#2688F3;}
+		.form-group .active:hover{background:#2688F3;}
+		.form-group .active>a{color:#fff;}
+		.table tbody td,th {
+			vertical-align: middle !important;
+		}
+	</style>
+	<script>
+		$(function(){
+			$(".form-group >li").click(function(){
+				if($(this).hasClass("active")) return;
+				else{
+					$(this).addClass("active");
+					$(this).siblings().removeClass("active");
+				}
+			});
+		});
+	</script>
+{% endblock %}
+{% block content %}
+<div class = "container-fluid">
+	<div class = "row my-5">
+		<div class = "col-lg-9">
+			<div class="p-lg-4 p-md-3 bg-white rounded">
+				<table class="table table-hover table-content">
+					<thead class="thead-light">
+					<tr>
+						<th scope="col">ID</th>
+						<th scope="col">Contest Name</th>
+						<th scope="col">Start Time</th>
+						<th scope="col">Contest Time</th>
+						<th scope="col">Attribute</th>
+						<th scope="col" class="pl-lg-5">Count</th>
+					</tr>
+					</thead>
+					<tbody>
+					{% for con in contest %}
+					<tr><th scope="row">{{con.id}}</th>
+						<td><a href = "{% url 'contest:show_problem' con.id %}">{{con.matchName}}</a></td>
+						<td>{{con.startTime}}</td><td>{{con.howLong}}</td>
+						<td><a>{{con.attribute}}</a></td>
+						<td>
+							<div class="row">
+								<span class="col-sm-4 text-center"><i class="fas fa-users"></i>x{{cnt| my_filter }}</span>
+								<small class="col-sm-8 text-center">You are alertly Register</small>
+							</div>
+						</td></tr>
+					{% endfor %}
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class = "col-lg-3">
+			<div class="bg-white p-3 rounded">
+				<h4 class = "text-center font-weight-bold">查找比赛</h4>
+				<form>
+					<div class="form-row justify-content-center">
+						<div class="input-group my-2 col-10">
+							 <input type="text" class="form-control" placeholder="输入比赛id/创建者的昵称">
+							 <div class="input-group-prepend">
+								 <div class="input-group-text"><i class="fas fa-search"></i></div>
+							 </div>
+						 </div>
+					</div>
+					<h5 class = "font-weight-bold my-3">筛选</h5>
+					<div class="form-row justify-content-center">
+						<div class = "form-group col-10 ">
+							<li class = "active"><a>All</a></li>
+							<li><a>Scheduled</a></li>
+							<li><a>Running</a></li>
+							<li><a>Ended</a></li>
+						</div>
+					</div>
+				</form>
+				<button class = "btn btn-primary col-12 my-3" data-toggle="modal" data-target="#creatContent">创建比赛</button>
+			</div>
+		</div>
+	</div>
+	<nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center py-4">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+</div>
+{% endblock %}

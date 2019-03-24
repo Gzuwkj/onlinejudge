@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{%for x in code%}
+    <!--{% if  forloop.first %}-->
+        <textarea id="Solution" name="editor" style="width:700px;height:700px;">{{x.content}}</textarea>
+    <!--{% endif %}-->
+<br/>
+{% endfor %}
+{{error}}
+</body>
+</html>

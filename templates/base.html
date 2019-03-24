@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+{% load staticfiles %}
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style>
+        .search-box{
+			border-radius: 40px;
+			background: #95a5a6;
+			padding: 4px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.search-box form{
+			margin: auto;
+			width: 0;
+		}
+		.search-text{
+			border: none;
+			outline: none;
+			background: inherit;
+			color: #2c3e50;
+			text-align: center;
+			transition: 0.4s;
+			width: 0px;
+		}
+		.search-btn{
+			height: 30px;
+			width: 30px;
+			font-size: 17px;
+			border-radius: 50%;
+			background: inherit;
+			color: #2c2c54;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-decoration: none!important;
+			transition: 0.4s;
+		}
+        .search-form{display: none;}
+		.search-box:hover > .search-text{width: 100px;padding: 0 6px;}
+		.search-box:hover > .search-btn{background: #fff;}
+    </style>
+    <title>{% block title %}base{% endblock %}</title>
+    {% block css_js %}
+
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                    <div class = "container justify-content-between">
+                        <div class="row">
+                            <div class="col-md-4 mb-1">
+                                {% if user.is_authenticated %}
+                                    <a href="{% url 'user:info' user.id %}"><h4 class="text-white">{{ user.username }}</h4></a>
+                                    <img class="img-thumbnail mt-3" src="{{ user.headImage.url }}" alt="User" height="90" width="90">
+                                {% else %}
+                                    <h4 class="text-white">尚未登陆</h4>
+                                    <img class="img-thumbnail mt-3" src="{% static "image/user.jpg" %}" alt="User" height="90" width="90">
+                                {% endif %}
+                            </div>
+                            <div class="col-md-5 d-none d-md-block">
+                                <canvas></canvas>
+                            </div>
+                            <div class="col-md-3 d-flex flex-column md-0 mt-2">
+                                <h4 class="text-white">info</h4>
+                                <span class="text-muted">School: 贵州大学</span>
+                                <span class="text-muted">Contest Rating: 1700</span>
+                                <span class="text-muted">Registered: 9 mouths ago</span>
+                                <span class="text-muted">Email: 1838679406@qq.com</span>
+                                <span class="text-muted">Last seen: just now</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+                <div class = "container d-flex flex-column flex-md-row align-items-center ">
+                    <button class="navbar-toggler collapsed my-2 my-md-0 mr-md-3" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-nav navbar my-2 my-md-0 mr-md-3" style="flex-direction:row;justify-content:space-around;">
+                        <a class="p-2 nav-link {% if request.path|slice:'2' == '/i'%}active{% endif %}" href="{% url 'user:index' %}">Home</a>
+                        <a class="p-2 nav-link {% if request.path|slice:'2' == '/c'%}active{% endif %}" href="{% url 'contest:match' %}">Contests</a>
+                        <a class="p-2 nav-link {% if request.path|slice:'2' == '/p'%}active{% endif %}" href="{% url 'problem:problem_page' 0 %}">Problem List</a>
+                        <a class="p-2 nav-link {% if request.path|slice:'2' == '/r'%}active{% endif %}" href="{% url 'user:user_rank' %}">Rank</a>
+                    </div>
+                    <div class = "row my-2 my-md-0 mr-md-6">
+                        <div class = "search-box mr-3">
+                            <input class = "search-text" type="text" placeholder="search text">
+                            <form action="" method="post" class="search-form">
+                                 {% csrf_token %}
+                                <input type="text">
+                            </form>
+                            <a href="{% url 'user:logout' %｝" onclick= "submit_js()" class = "search-btn"><i class="fas fa-search"></i></a>
+                        </div>
+                        <script>
+                            function submit_js() {
+                              $('.search-form > input').val($('.search-box > input').val());
+                              $('.search-form').submit();
+                            }
+                        </script>
+                        {% if user.is_authenticated %}
+                            <a href="javascript:void(0);" onclick="logout()"><button class = "btn btn-outline-danger" type="button">Exist</button></a>
+                            <form action="{% url 'user:logout' %}" id="logout" method="post" class="hidden"></form>
+                            <script>
+                                function logout() {
+                                    $("#logout").submit();
+                                }
+                            </script>
+                        {% else %}
+                            <a href = "{% url 'user:login' %}"><button class = "btn btn-outline-success" type="button">Login</button></a>
+                            <a href="{% url 'user:register' %}"><button class = "btn btn-link text-info">SignUp</button></a>
+                        {% endif %}
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class = "container-fluid bg-light pt-1">
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer class="bg-white text-muted py-3 my-3">
+      <div class="container text-center">
+        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+        <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+      </div>
+    </footer>
+    <script>
+        $(function () {
+            $('.navbar-nav .nav-link').click(function(){
+                if($(this).hasClass('active'))return;
+                else{
+                    $(this).addClass('active');
+                    $(this).siblings().removeClass('active');
+                }
+            })
+        });
+    </script>
+   </body>
+</html>
