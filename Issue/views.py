@@ -64,3 +64,7 @@ def edit(request):
     #         ratio_list = ratio(contest, nos)
     #     return render(request, 'contest.html', {'problems': problems, 'ratio_list': ratio_list, 'error': error})
     return render(request, 'codeEditor.html')
+
+
+def all_status(request):
+    return render(request, 'status.html')
