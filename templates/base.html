@@ -63,17 +63,32 @@
                     <div class = "container justify-content-between">
                         <div class="row">
                             <div class="col-md-4 mb-1">
-                                {% if user.is_authenticated %}
-                                    <a href="{% url 'user:info' user.id %}"><h4 class="text-white">{{ user.username }}</h4></a>
-                                    <img class="img-thumbnail mt-3" src="{{ user.headImage.url }}" alt="User" height="90" width="90">
+                                {% if request.session.is_login %}
+                                    <a href="{% url 'user:info' user.id %}">
+                                        <h4 class="text-white">{{ user.username }}</h4>
+                                        <img class="img-thumbnail mt-3" src="{{user.headImage.url}}" alt="User" height="90" width="90">
+                                    </a>
                                 {% else %}
                                     <h4 class="text-white">尚未登陆</h4>
-                                    <img class="img-thumbnail mt-3" src="{% static "image/user.jpg" %}" alt="User" height="90" width="90">
+                                    <img class="img-thumbnail mt-3" src="{% static "image/default.jpg" %}" alt="User" height="90" width="90">
                                 {% endif %}
                             </div>
                             <div class="col-md-5 d-none d-md-block">
                                 <canvas></canvas>
                             </div>
+                            {% if request.session.is_login %}
+                            <div class="col-md-3 d-flex flex-column md-0 mt-2">
+                                <h4 class="text-white">Info</h4>
+                                <span class="text-muted">School: {{user.school}}</span>
+                                <span class="text-muted">Contest Rating: {{user.rating}}</span>
+                                <span class="text-muted">Registered: {{user.date_joined}}</span>
+                                <span class="text-muted">Email: {{user.email}}</span>
+                                <span class="text-muted">Last seen: {{user.last_login}}</span>
+                            </div>
+                            {% else %}
+                            <div class="col-md-3 d-flex flex-column md-0 mt-2">
+                            </div>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
@@ -104,7 +119,7 @@
                               $('.search-form').submit();
                             }
                         </script>
-                        {% if user.is_authenticated %}
+                        {% if request.session.is_login %}
                             <a href="javascript:void(0);" onclick="logout()"><button class = "btn btn-outline-danger" type="button">Exist</button></a>
                             <form action="{% url 'user:logout' %}" id="logout" method="post" class="hidden"></form>
                             <script>
@@ -134,16 +149,5 @@
         </p>
       </div>
     </footer>
-    <script>
-        $(function () {
-            $('.navbar-nav .nav-link').click(function(){
-                if($(this).hasClass('active'))return;
-                else{
-                    $(this).addClass('active');
-                    $(this).siblings().removeClass('active');
-                }
-            })
-        });
-    </script>
    </body>
 </html>

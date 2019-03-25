@@ -4,10 +4,34 @@
 {% endblock %}
 {% load staticfiles %}
 {% block css_js %}
-	<link rel="stylesheet" href="{% static 'css/base16-dark.css' %}">
-	<script src="{% static 'js/clike.js' %}"></script>
-	<script src="{% static 'js/codemirror.js' %}"></script>
-	<script src="{% static 'js/python.js' %}"></script>
+	<link href = "{% static 'css/base16-dark.css' %}" rel = "stylesheet">
+	<link href = "{% static 'css/codemirror.css' %}" rel = "stylesheet">
+    <script>
+        $(function(){
+            var myTextarea = $("#texteara")[0];
+            var editor = CodeMirror.fromTextArea(myTextarea, {
+                lineNumbers: true,
+                mode:"text/x-c++src",
+                indentUnit: 4,
+                theme:"base16-dark",
+                indentWithTabs: true,
+            });
+            editor.setSize("100%" , "100%");
+            var code_slects = $(".dropdown-menu>li>a");
+            $(".re_Input").click(function(){
+                editor.setValue("");
+            });
+            for(var i = 0;i < code_slects.length;i++){
+            $(code_slects[i]).click(function(){
+                    editor.setOption("mode" , "text/x-" + $(this).attr('id'));
+                    $(".dropdown-toggle .slect-title").text($(this).text());
+                });
+            }
+        });
+    </script>
+	<script src="{% static 'js/code-editing/codemirror.js' %}"></script>
+	<script src="{% static 'js/code-editing/clike.js' %}"></script>
+	<script src="{% static 'js/code-editing/python.js' %}"></script>
 	<style>
 		p{
 			font-size: 14px;
@@ -37,44 +61,24 @@
 			height:12px;width:100%;background:#3d444c;text-align:center;
 
 		}
-		.up-btn .fa-sort-up{color: #fff;font-size: 18px;background: #232c31;padding: 2px 8px 0 8px;line-height: 12px;vertical-align:top;display: inline-block;}
- 		.up-btn .fa-sort-up:hover{color:#08c;cursor:pointer;}
+		.up-btn .fas{color: #fff;font-size: 18px;background: #232c31;padding: 2px 8px 0 8px;line-height: 12px;vertical-align:top;display: inline-block;}
+ 		.up-btn .fas:hover{color:#08c;cursor:pointer;}
 		.stu-box{
 			width: 100%;
+			height: 0;
 			transition: 0.4s;
+			background: #3d444c;
+			margin-top: 0.1em;
 		}
 	</style>
-	<script>
-		var myTextarea = $(".Codearea")[0];
-		var editor = CodeMirror.fromTextArea(myTextarea, {
-			lineNumbers: true,
-			mode:"text/x-c++src",
-			indentUnit: 4,
-			theme:"base16-dark",
-			indentWithTabs: true,
-		});
-		editor.setSize("100%" , "100%");
-		$(".up-btn").click(function(){
-		});
-		var code_slects = $(".dropdown-menu>li>a");
-		$(".re_Input").click(function(){
-			editor.setValue("");
-		});
-		for(var i = 0;i < code_slects.length;i++){
-		$(code_slects[i]).click(function(){
-				editor.setOption("mode" , "text/x-" + $(this).attr('id'));
-				$(".dropdown-toggle .slect-title").text($(this).text());
-			});
-		}
-	</script>
 {% endblock %}
 
 {% block content %}
-<div class = "container">
-	<div class="row mt-5 mt-2">
+<div class = "container-fluid">
+	<div class="row mt-5 mt-2 justify-content-center">
 		{% for prob in problem %}
-		<div class = "col-lg-7 mb-2">
-			<div class="bg-white p-md-4 px-1"style="height: 77vh;overflow: auto;">
+		<div class = "col-lg-6 mb-2 bg-white">
+			<div class=" p-md-3"style="height: 87vh;overflow: auto;min-height: 600px;">
 				<h5 class = "font-weight-bold">题目描述</h5>
 				<p class = "bg-light text-justify p-3 mt-3">
 					{{prob.content}}
@@ -109,31 +113,62 @@
 				</div>
 			</div>
 		</div>
-		<div class = "col-lg-5 p-3 bg-dark rounded">
-			<form method="post" action="{% url 'contest:status' prob.no %}">
+		<div class = "col-lg-5 p-3 bg-dark rounded" style="height: 87vh;">
+			<form class="d-flex flex-column " method="post" action="{% url 'contest:status' prob.no %}" style="height: 100%;width: 100%;">
 				<div class = "row mb-2 bttom-border pb-2">
 					<div class="dropdown col-lg-4 col-md-4 ">
+						<select class=" select_hidden " name="language" id="">
+							<option value="C">c</option>
+							<option value="C++">c++</option>
+							<option value="Java">java</option>
+							<option value="Python">python</option>
+						</select>
 						<div class="dropdown"><a class="btn btn-secondary dropdown-toggle text-white bg-info" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Dropdown link</a>
-							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-								<a class="dropdown-item" href="#" id = "csrc">Action</a>
-								<a class="dropdown-item" href="#" id="c++src">Another action</a>
-								<a class="dropdown-item" href="#" id="java">Something else here</a>
-								<a class="dropdown-item" href="#" id="python">Python</a>
+							C</a>
+							<div class="dropdown-menu select_show" aria-labelledby="dropdownMenuLink">
+								<a class="dropdown-item" href="#" id = "csrc" name="c">C</a>
+								<a class="dropdown-item" href="#" id="c++src" name="c++">C++</a>
+								<a class="dropdown-item" href="#" id="java" name="java">Java</a>
+								<a class="dropdown-item" href="#" id="python" name="python">Python</a>
 							</div>
 						</div>
 					</div>
 					<div class = "col-lg-3 col-md-4 col-sm-4 col-xs-4 text-info pt-1"><i class="fab fa-rev"></i> 重置</div>
 				</div>
-				<div class = "row">
-					<textarea class = "Codearea" name=""></textarea>
+				<div class = "row" style="flex: 1;">
+					<div class = "editing-box" style="height: 100%;width: 100%;">
+						<textarea id="texteara"></textarea>
+					</div>
 				</div>
 				<div class = "row">
-					<div class = "up-btn"><i class="fas fa-sort-up"></i></div>
-					<div class = "stu-box"></div>
+					<div class = "up-btn"><i class="fas fa-angle-up"></i></div>
+					<input type="text" class="d-none">
 					<button type = "submit" class = "mx-2 mt-3 btn btn-primary col-lg-4 col-md-6 col-sm-8">提交代码</button>
+					<div class = "stu-box mx-1" style="overflow: auto;"></div>
 				</div>
 			</form>
+			<script>
+				var select_show = $('.select_show');
+				var select_hidden = $('.select_hidden > option');
+				select_show.children().click(function(){
+					$('.dropdown > a').text($(this).text());
+					$(select_hidden[$(this).index()]).attr('selected',true).siblings('option').attr('selected',false);
+				});
+				var up_btn = $(".up-btn");
+				var flag = 1;
+				up_btn.click(function(){
+				    if (flag){
+				         $(".stu-box").css('height', '200px');
+				         $(this).children().removeClass('fa-angle-up').addClass('fa-angle-down');
+				         flag = 0;
+					}
+				    else{
+				         $(".stu-box").css('height', '0px');
+				         $(this).children().removeClass('fa-angle-down').addClass('fa-angle-up');
+				         flag = 1;
+					}
+				});
+			</script>
 			{% endfor %}
 		</div>
 	</div>

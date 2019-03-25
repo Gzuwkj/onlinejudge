@@ -30,6 +30,7 @@
 	<div class = "container">
 		<div class = "row bg-white p-lg-3 my-3 p-1 rounded">
 			<div class="col-12">
+				<h4 class="font-weight-bold col-10 mx-auto text-center">{{request.session.contest_name}}</h4>
 				<div class="col-10 mx-auto mt-4 mb-3">
 					<div class="progress" style="height: 1em;">
 						<div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -37,6 +38,23 @@
 					<script>
 					</script>
 				</div>
+				<script>
+					var progress = $(".progress-bar");
+					var startTime = {
+					    year:2019,
+						month:3,
+						day:25,
+						hour:18,
+						minute:0,
+					}
+					var endTime={
+					    year:2019,
+						month:3,
+						day:25,
+						hour:18,
+						minute:0,
+					}
+				</script>
 			</div>
 			<div class="col-12 bg-light justify-content-center my-3">
 				<ul class="col-12 nav nav-tabs">
@@ -251,5 +269,6 @@
 			</div>
 		</div>
 	</div>
+
 {% endblock %}
 
