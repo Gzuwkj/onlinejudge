@@ -117,8 +117,8 @@
 			<form class="d-flex flex-column " method="post" action="{% url 'contest:status' prob.no %}" style="height: 100%;width: 100%;">
 				<div class = "row mb-2 bttom-border pb-2">
 					<div class="dropdown col-lg-4 col-md-4 ">
-						<select class=" select_hidden " name="language" id="">
-							<option value="C">c</option>
+						<select class="d-none select_hidden " name="language" id="language">
+							<option value="C" selected="selected">c</option>
 							<option value="C++">c++</option>
 							<option value="Java">java</option>
 							<option value="Python">python</option>
@@ -137,7 +137,7 @@
 				</div>
 				<div class = "row" style="flex: 1;">
 					<div class = "editing-box" style="height: 100%;width: 100%;">
-						<textarea id="texteara"></textarea>
+						<textarea id="texteara" name="editor"></textarea>
 					</div>
 				</div>
 				<div class = "row">

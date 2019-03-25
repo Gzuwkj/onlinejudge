@@ -106,13 +106,10 @@ def match_register(request, cid):                                # 比赛注册
         time2 = datetime.datetime.now()  # 当前系统时间
         time3 = time1 + datetime.timedelta(minutes=int(match_name.howLong))  # 比赛结束时间
         if time1 > time2:
-            print('bisaiweikaishi')
             JsonResponse('比赛未开始', safe=False)
         elif time2 < time3:
-            print('bisaijinxingzhong')
             JsonResponse('火热进行中', safe=False)
         elif time2 > time3:
-            print('bisaijieshu', safe=False)
             JsonResponse('比赛已结束')
     return render(request, 'contestList.html')
 
@@ -177,6 +174,7 @@ def status(request, prob_id):  # 提交状态
                 return HttpResponseRedirect('/contest/match/')
             language = request.POST.getlist('language')[0]
             content = request.POST.get('editor', '')
+            print(content)
             if content != '':
                 MatchSubmit.objects.create(
                     matchName=contest,
@@ -186,7 +184,11 @@ def status(request, prob_id):  # 提交状态
                     result="0",
                     language=language
                 )
-            return HttpResponseRedirect("/contest/status/"+str(prob_no))
+            result = MatchSubmit.objects.filter(matchName=contest,
+                                                userName=username,
+                                                probID=prob_no)
+        #return HttpResponseRedirect('/problem/page/'+str(prob_id), json.dump(result))
+        return render(request, 'login.html')
     else:
         if str(prob_id) == '0':
             username = request.user

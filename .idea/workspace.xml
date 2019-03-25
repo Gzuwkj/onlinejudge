@@ -40,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Issue/templates/problem.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="132" column="34" lean-forward="true" selection-start-line="132" selection-start-column="34" selection-end-line="132" selection-end-column="34" />
+            <state relative-caret-position="300">
+              <caret line="119" column="24" selection-start-line="119" selection-start-column="24" selection-end-line="119" selection-end-column="24" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -85,13 +85,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Contest/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="775">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="339">
+              <caret line="190" column="44" selection-start-line="190" selection-start-column="44" selection-end-line="190" selection-end-column="44" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
+                <element signature="e#8367#11110#0" />
               </folding>
             </state>
           </provider>
@@ -159,18 +160,18 @@
         <option value="$PROJECT_DIR$/UserProfile/templates/userinfo.html" />
         <option value="$PROJECT_DIR$/UserProfile/views.py" />
         <option value="$PROJECT_DIR$/Contest/templates/contestList.html" />
-        <option value="$PROJECT_DIR$/Contest/views.py" />
         <option value="$PROJECT_DIR$/UserProfile/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/Contest/templates/contest.html" />
         <option value="$PROJECT_DIR$/Issue/templates/problem.html" />
+        <option value="$PROJECT_DIR$/Contest/views.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-50" />
-    <option name="width" value="1400" />
-    <option name="height" value="1045" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -184,6 +185,17 @@
             <path>
               <item name="onlinejudge" type="b2602c69:ProjectViewProjectNode" />
               <item name="onlinejudge" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onlinejudge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlinejudge" type="462c0819:PsiDirectoryNode" />
+              <item name="Contest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onlinejudge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="onlinejudge" type="462c0819:PsiDirectoryNode" />
+              <item name="Contest" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="onlinejudge" type="b2602c69:ProjectViewProjectNode" />
@@ -210,19 +222,7 @@
               <item name="onlinejudge" type="b2602c69:ProjectViewProjectNode" />
               <item name="onlinejudge" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="onlinejudge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="onlinejudge" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="image" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="onlinejudge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="onlinejudge" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="onlinejudge" type="b2602c69:ProjectViewProjectNode" />
@@ -296,16 +296,16 @@
       <workItem from="1553433504238" duration="8880000" />
       <workItem from="1553488879661" duration="2111000" />
       <workItem from="1553493192978" duration="14000" />
-      <workItem from="1553494022820" duration="9447000" />
+      <workItem from="1553494022820" duration="13103000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34259000" />
+    <option name="totallyTimeSpent" value="37915000" />
   </component>
   <component name="TodoView" selected-index="3" />
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3297587" />
@@ -603,16 +603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Contest/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Contest/templates/contestList.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="606">
@@ -661,8 +651,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Issue/templates/problem.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="132" column="34" lean-forward="true" selection-start-line="132" selection-start-column="34" selection-end-line="132" selection-end-column="34" />
+        <state relative-caret-position="300">
+          <caret line="119" column="24" selection-start-line="119" selection-start-column="24" selection-end-line="119" selection-end-column="24" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#0;n#!!top" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -671,6 +661,17 @@
             <element signature="n#style#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Contest/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="190" column="44" selection-start-line="190" selection-start-column="44" selection-end-line="190" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#8367#11110#0" />
           </folding>
         </state>
       </provider>
